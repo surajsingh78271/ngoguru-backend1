@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 const connectDB = async (DB_URL)=>{
      return await mongoose.connect(DB_URL,{
         dbName:"ngoguru",
+          useNewUrlParser: true,
+        useUnifiedTopology: true,
         // serverApi: {
         //     version: ServerApiVersion.v1,
         //     strict: true,
